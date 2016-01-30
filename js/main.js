@@ -89,9 +89,11 @@ Functions = {
         $button.on('click', function () {
 
           if (!$(form).hasClass(activeClass)) {
-            $(form).addClass(activeClass).focus();
+
+            $(form).addClass(activeClass);
             return false;
           }
+
           return true;
         });
 

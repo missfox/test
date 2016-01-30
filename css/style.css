@@ -429,11 +429,11 @@ a {
   color: #acacac;
 }
 ::-moz-selection {
-  background: #99b900;
+  background: #c5ae98;
   color: #fff;
 }
 ::selection {
-  background: #99b900;
+  background: #c5ae98;
   color: #fff;
 }
 .button {
