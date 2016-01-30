@@ -1,0 +1,76 @@
+<svg id="map" xmlns="http://www.w3.org/2000/svg" width="405" height="603" viewBox="0 0 405 603">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fff;
+        fill-opacity: 0;
+        stroke-linejoin: round;
+      }
+
+      .cls-1 {
+        stroke: #a1b100;
+        stroke-width: 10px;
+      }
+
+      .cls-1, .cls-7 {
+        opacity: 0.3;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #95c019;
+        stroke-width: 2px;
+        stroke-dasharray: 12 6;
+        opacity: 0.6;
+      }
+
+      .cls-3 {
+        stroke: #adbe00;
+        stroke-width: 16px;
+      }
+
+      .cls-4 {
+        fill: #c6d804;
+      }
+
+      .cls-4, .cls-5 {
+        fill-rule: evenodd;
+      }
+
+      .cls-5 {
+        fill: #0a6f29;
+      }
+
+      .cls-6 {
+        fill: #95c019;
+      }
+
+      .cls-7 {
+        fill: #2e5a3b;
+        mix-blend-mode: overlay;
+      }
+
+      .cls-8 {
+        fill: #01a64a;
+      }
+
+      .cls-9 {
+        fill: #45aa2f;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect id="Rounded_Rectangle_2" data-name="Rounded Rectangle 2" class="cls-1" x="5" y="264" width="251" height="334" rx="64" ry="64"/>
+    <rect id="Rounded_Rectangle_2-2" data-name="Rounded Rectangle 2" class="cls-2" x="10" y="268" width="242" height="322" rx="60" ry="60"/>
+    <rect id="Rounded_Rectangle_2-3" data-name="Rounded Rectangle 2" class="cls-3" x="146" y="8" width="251" height="334" rx="54" ry="54"/>
+  </g>
+  <path class="cls-4" d="M589,1810h9v4h-9v-4Zm0-6h9v4h-9v-4Zm0-6h9v4h-9v-4Z" transform="translate(-328 -1472)"/>
+  <path class="cls-4" d="M486,1751h4v9h-4v-9Zm-6,0h4v9h-4v-9Zm-6,0h4v9h-4v-9Z" transform="translate(-328 -1472)"/>
+  <path class="cls-4" d="M486,1722h4v9h-4v-9Zm-6,0h4v9h-4v-9Zm-6,0h4v9h-4v-9Z" transform="translate(-328 -1472)"/>
+  <path class="cls-5" d="M456,1768a2,2,0,0,1,2,2v15a2,2,0,0,1-4,0v-15A2,2,0,0,1,456,1768Z" transform="translate(-328 -1472)"/>
+  <circle class="cls-6" cx="128" cy="291" r="9"/>
+  <path class="cls-5" d="M506,1709a2,2,0,0,1,2,2v15a2,2,0,0,1-4,0v-15A2,2,0,0,1,506,1709Z" transform="translate(-328 -1472)"/>
+  <ellipse class="cls-8" cx="178" cy="236" rx="7" ry="12"/>
+  <path class="cls-5" d="M599,1822a2,2,0,0,1,2,2v15a2,2,0,0,1-4,0v-15A2,2,0,0,1,599,1822Z" transform="translate(-328 -1472)"/>
+  <ellipse class="cls-9" cx="271" cy="354.5" rx="9" ry="6.5"/>
+</svg>

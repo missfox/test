@@ -1,0 +1,222 @@
+// ==============================================
+// Misc helpers and shortcuts
+// ==============================================
+
+.flexbox() {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inline-flex() {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.flex-direction(@val, @old-dir, @old-orient) {
+  -webkit-box-orient: @old-orient;
+  -webkit-box-direction: @old-dir;
+  -webkit-flex-direction: @val;
+  -ms-flex-direction: @val;
+  flex-direction: @val;
+}
+
+.flex-wrap(@val) {
+  -webkit-flex-wrap: @val;
+  -ms-flex-wrap: @val;
+  flex-wrap: @val;
+}
+
+.flex-flow(@values) {
+  -webkit-flex-flow: @values;
+  -ms-flex-flow: @values;
+  flex-flow: @values;
+}
+
+.justify-content(@val, @old) {
+  -webkit-box-pack: @old;
+  -webkit-justify-content: @val;
+  -ms-flex-pack: @old;
+  justify-content: @val;
+}
+
+.align-items(@val, @old) {
+  -webkit-box-align: @old;
+  -webkit-align-items: @val;
+  -ms-flex-align: @old;
+  align-items: @val;
+}
+
+.align-content(@val, @old) {
+  -webkit-align-content: @val;
+  -ms-flex-line-pack: @old;
+  align-content: @val;
+}
+
+.order(@val) {
+  -webkit-box-ordinal-group: @val + 1;
+  -webkit-order: @val;
+  -ms-flex-order: @val;
+  order: @val;
+}
+
+.flex-grow(@val) {
+  -webkit-box-flex: @val;
+  -webkit-flex-grow: @val;
+  -ms-flex-positive: @val;
+  flex-grow: @val;
+}
+
+.flex-shrink(@val) {
+  -webkit-flex-shrink: @val;
+  -ms-flex-negative: @val;
+  flex-shrink: @val;
+}
+
+.flex-basis(@val) {
+  -webkit-flex-basis: @val;
+  -ms-flex-preferred-size: @val;
+  flex-basis: @val;
+}
+
+.flex(@values) {
+  -webkit-box-flex: @values;
+  -webkit-flex: @values;
+  -ms-flex: @values;
+  flex: @values;
+}
+
+.align-self(@val, @old) {
+  -webkit-align-self: @val;
+  -ms-flex-item-align: @old;
+  align-self: @val;
+}
+
+// Shortcuts --------------------------------
+
+.filter(@filter: grayscale(100%)) {
+  -webkit-filter: @filter;
+  filter: @filter;
+}
+
+.rotate(@rotation) {
+  -webkit-transform: rotate(@rotation);
+  transform: rotate(@rotation);
+}
+
+.scale(@val) {
+  -webkit-transform: scale(@val);
+  transform: scale(@val);
+}
+
+.scaleY(@val) {
+  -webkit-transform: scaleY(@val);
+  transform: scaleY(@val);
+}
+
+.skew(@val) {
+  -webkit-transform: skew(@val);
+  transform: skew(@val);
+}
+
+.translate(@val) {
+  -webkit-transform: translate(@val);
+  transform: translate(@val);
+}
+
+.translate3d(@valX, @valY, @valZ) {
+  -webkit-transform: translate3d(@valX, @valY, @valZ);
+  transform: translate3d(@valX, @valY, @valZ);
+}
+
+.placeholder(@color: #DDD) {
+  ::-moz-placeholder {
+    color: @color;
+  }
+  ::-webkit-input-placeholder {
+    color: @color;
+  }
+  :-ms-input-placeholder {
+    color: @color;
+  }
+}
+
+.selection(@background-color, @font-color) {
+  ::-moz-selection {
+    background: @background-color;
+    color: @font-color;
+  }
+
+  ::selection {
+    background: @background-color;
+    color: @font-color;
+  }
+}
+
+// Helpers --------------------------------
+
+.clearfix() when (@for-old-ie) {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+  *zoom: 1;
+}
+
+.clearfix() when not (@for-old-ie) {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.size(@thesize) {
+  width: @thesize;
+  height: @thesize;
+}
+
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+// System --------------------------------
+
+.nudge-l( @pos ) when ( @pos = 0 ) {
+}
+
+.nudge-l( @pos ) when not ( @pos = 0 ) {
+  left: @pos;
+}
+
+.nudge-r( @pos ) when ( @pos = 0 ) {
+}
+
+.nudge-r( @pos ) when not ( @pos = 0 ) {
+  right: @pos;
+}
+
+.nudge-t( @pos ) when ( @pos = 0 ) {
+}
+
+.nudge-t( @pos ) when not ( @pos = 0 ) {
+  top: @pos;
+}
+
+.nudge-b( @pos ) when ( @pos = 0 ) {
+}
+
+.nudge-b( @pos ) when not ( @pos = 0 ) {
+  bottom: @pos;
+}

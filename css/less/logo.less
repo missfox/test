@@ -1,0 +1,78 @@
+.logo {
+  display: inline-block;
+
+  h1 {
+    font: 0/0 a;
+    opacity: 0;
+    position: absolute;
+  }
+
+  &__icon {
+    .size(100%);
+    display: block;
+  }
+
+  .page-header & {
+    .size(165px, 36px);
+    margin-right: 52px;
+    transition: 0.2s opacity ease-in-out;
+    vertical-align: top;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .page-footer & {
+    margin-top: -4px;
+  }
+
+  &_footer {
+    .size(148px, 35px);
+    display: block;
+  }
+
+}
+
+.text {
+  fill: inherit;
+}
+
+svg#logo__icon use {
+  fill: #fff;
+}
+
+svg#card__logo use {
+  fill: #ee2a24;
+}
+
+@media screen and (max-width: @pageLargeDev) {
+  .logo {
+    .page-footer & {
+      margin-top: -6px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .logo {
+
+    &_footer {
+      .size(125px, 24px);
+    }
+
+    .page-footer & {
+      margin-top: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: @pageSmallDev) {
+  .logo {
+    .page-header & {
+      .size(148px, 33px);
+      margin-right: 0;
+    }
+  }
+}
+

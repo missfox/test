@@ -1,0 +1,266 @@
+html {
+  .size(100%);
+  font-size: ~"@{base-font-size}px";
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-overflow-scrolling: touch;
+}
+
+.page {
+  font-family: 'Avenir Next', AvenirNext, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+input, button {
+  -webkit-appearance: none;
+}
+
+img {
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+}
+
+.svg-all {
+  display: none;
+}
+
+h2 {
+  .font-size-rems(50);
+  color: @white;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+h3 {
+  .font-size-rems(28);
+  color: @black;
+  font-weight: 500;
+  margin: 30px 0;
+}
+
+.heading {
+  padding-right: 216px;
+  position: relative;
+
+  &__link {
+    .font-size-rems(18);
+    color: @text-red;
+    font-weight: 500;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    transition: 0.2s color ease-in-out;
+    &:hover {
+      color: @dark-red;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  transition: 0.2s color ease-in-out;
+ }
+
+.container {
+  margin: 0 auto;
+  max-width: @pageMaxWidth;
+  min-width: @pageMinWidth;
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 100%;
+}
+
+.overlay {
+  &_type {
+    &_grad {
+      background-image: linear-gradient(to top, #f5f7fa 0%, #f7fafc 0%, @white 100%);
+    }
+  }
+
+  &_theme {
+    &_green {
+      background-color: @green;
+    }
+
+    &_red {
+      background-color: @text-red;
+    }
+
+    &_grey {
+      background-color: @grey;
+    }
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.placeholder(#acacac);
+
+.selection(#99b900, #fff);
+
+.button {
+  .font-size-rems(18);
+  background: transparent;
+  border: 2px solid @white;
+  border-radius: 25px;
+  color: @white;
+  display: inline-block;
+  font-weight: 600;
+  padding: 0 18px;
+  transition: all 0.2s ease-in-out;
+
+  .page-header & {
+    height: 40px;
+    opacity: 0.8;
+    vertical-align: top;
+  }
+
+  &_type {
+    &_big {
+      border-radius: 50px;
+      height: 60px;
+      padding: 0 36px;
+    }
+  }
+
+  &:hover {
+    background-color: @white;
+    border-color: @white;
+    color: @text-red;
+    opacity: 1;
+  }
+}
+
+.text {
+  &_bolder {
+    font-weight: bolder;
+  }
+}
+
+.address {
+  .font-size-rems(16);
+  color: @white;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.88;
+  opacity: 0.4;
+
+  .page-footer & {
+    margin-top: 3px;
+  }
+}
+
+.close {
+  .scale(0);
+  height: 20px;
+  opacity: 0;
+  position: absolute;
+  right: 16px;
+  top: 21px;
+  transition: 0.2s visibility ease-in-out, 0.2s opacity ease-in-out;
+  visibility: hidden;
+  width: 20px;
+
+  &::before, &::after {
+    background: @white;
+    content: '';
+    height: 22px;
+    left: 9px;
+    position: absolute;
+    top: -1px;
+    width: 2px;
+  }
+
+  &::before {
+    .rotate(45deg);
+  }
+
+  &::after {
+    .rotate(-45deg);
+  }
+}
+
+@media screen and (max-width: @pageLargeDev) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  h3 {
+    margin-bottom: 21px;
+  }
+
+  .overlay {
+    &_theme {
+      &_grey {
+        background-color: #4d4d4d;
+      }
+    }
+  }
+  .address {
+    .page-footer & {
+      margin-top: 4px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  h2 {
+    .font-size-rems(22);
+  }
+
+  .button {
+    .font-size-rems(14);
+    .page-header & {
+      display: none;
+    }
+
+    &_type {
+      &_big {
+        height: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @pageSmallDev) {
+
+  h3 {
+    .font-size-rems(16);
+    font-weight: 500;
+    margin: 17px 0;
+  }
+
+  .heading {
+    padding-right: 130px;
+
+    &__link {
+      .font-size-rems(12);
+      top: 4px;
+      right: 16px;
+    }
+  }
+
+  .address {
+    .font-size-rems(12);
+    line-height: 1.14;
+    padding-right: 16px;
+    letter-spacing: 0.4px;
+    .page-footer & {
+      margin-top: 7px;
+    }
+  }
+}

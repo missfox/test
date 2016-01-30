@@ -1,0 +1,18 @@
+<svg>
+  <defs>
+
+    <g id="shape-icon-pin">
+      <!-- all the paths and shapes and whatnot for this icon -->
+      	<path stroke-width="1" stroke="#fe9389" fill="none" fill-rule="evenodd" d="M 6 0 C 2.56 0 0 3.02 0 6.5 C 0 10.92 6 16 6 16 C 6 16 12 10.92 12 6.5 C 12 3.06 9.44 0 6 0 Z" />
+    	<path fill="#fe9389" fill-rule="evenodd" d="M 6 5 C 6.55 5 7 5.45 7 6 C 7 6.55 6.55 7 6 7 C 5.45 7 5 6.55 5 6 C 5 5.45 5.45 5 6 5 Z" />
+    <g>
+
+    <g id="shape-icon-arrow-down">
+      <!-- all the paths and shapes and whatnot for this icon -->
+      <path fill="#fe9389" fill-rule="evenodd" d="M 11.66 1.06 C 11.66 1.06 6.05 5.92 6.05 5.92 C 6.05 5.92 5.91 6.05 5.91 6.05 C 5.91 6.05 0.62 1.06 0.62 1.06 C 0.62 1.06 1.66 0 1.66 0 C 1.66 0 5.94 4.08 5.94 4.08 C 5.94 4.08 10.66 0 10.66 0 C 10.66 0 11.66 1.06 11.66 1.06 Z" />
+    <g>
+
+    <!-- etc -->
+
+  </defs>
+</svg>
