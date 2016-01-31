@@ -62,18 +62,15 @@ Functions = {
   },
   CitySelect: {
     setContent: function () {
-      var $select = $('.select-city__list'),
-        $valueEl = $('.select-city__name');
+      var $select = $('.select-city__list');
 
       if ($select.length > 0) {
-        setSelectValue();
-        $select.on('change', function () {
-          setSelectValue();
-        });
+        var $valueEl = $('.select-city__name');
 
-        function setSelectValue() {
+        $valueEl.html($select.val());
+        $select.on('change', function () {
           $valueEl.html($select.val());
-        }
+        });
       }
     }
   },

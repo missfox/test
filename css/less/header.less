@@ -24,13 +24,13 @@
 
   &__left {
     float: left;
-    width: 82.58%;
+    width: 82%;
   }
 
   &__right {
     float: right;
     text-align: right;
-    width: 17.42%;
+    width: 18%;
   }
 
   &__link {
@@ -77,6 +77,9 @@
   }
 
   &__list {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background: transparent;
     border: none;
     color: transparent;
@@ -84,6 +87,7 @@
     position: absolute;
     top: 0;
     width: 100%;
+
 
     option {
       color: #000;
@@ -178,11 +182,24 @@
 
   .select-city {
     max-width: 186px;
-    padding-right: 30px;
+    padding-right: 29px;
     width: 23.36%;
 
     &__name {
       max-width: 74%;
+    }
+  }
+
+  .page-header {
+    &__left {
+      float: left;
+      width: 82.3%;
+    }
+
+    &__right {
+      float: right;
+      text-align: right;
+      width: 17.7%;
     }
   }
 }
@@ -278,7 +295,7 @@
     }
 
     &__bottom {
-      padding-bottom: 37px;
+      padding-bottom: 30px;
 
       &-wrapper {
         padding-top: 15px;
