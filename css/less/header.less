@@ -10,7 +10,7 @@
 
     &-wrapper {
       background-color: @dark-red;
-      padding: 7px 0;
+      padding: 5px 0 7px;
     }
   }
 
@@ -18,7 +18,7 @@
 
     &-wrapper {
       background-color: @red;
-      padding: 20px 0;
+      padding: 20px 0 19px;
     }
   }
 
@@ -37,6 +37,8 @@
     .font-size-rems(18);
     color: #ffb5ae;
     font-weight: 600;
+    display: inline-block;
+    margin-top: 1px;
 
     &:hover {
       color: @white;
@@ -52,11 +54,12 @@
   padding-right: 53px;
   position: relative;
   vertical-align: top;
-  width: 217px;
+  width: 218px;
 
   &__pin {
     .size(13px, 16px);
     display: inline-block;
+    margin-left: 1px;
     margin-right: 3px;
     vertical-align: sub;
   }
@@ -64,7 +67,8 @@
   &__arrow {
     .size(11px, 6px);
     display: inline-block;
-    margin-right: 2px;
+    margin-left: 2px;
+    margin-top: 5px;
     vertical-align: middle;
 
     path {
@@ -88,7 +92,6 @@
     position: absolute;
     top: 0;
     width: 100%;
-
 
     option {
       color: #000;
@@ -116,7 +119,7 @@
   &-form {
     display: inline-block;
     height: 40px;
-    margin-right: 19px;
+    margin-right: 23px;
     position: relative;
     width: 40px;
     z-index: 1;
@@ -206,7 +209,7 @@
   }
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 980px) {
   .select-city {
     overflow: hidden;
     padding-right: 16px;
@@ -228,7 +231,6 @@
   .page-header__right {
     width: 18.42%;
   }
-
 }
 
 @media screen and (max-width: 900px) {

@@ -2,7 +2,7 @@
   &:extend(.container);
   font-family: 'PT Sans', sans-serif;
   font-size: 0;
-  padding-bottom: 60px;
+  padding-bottom: 65px;
   padding-top: 60px;
 
   &__column {
@@ -10,7 +10,7 @@
     font-size: 1rem;
     padding-right: 20px;
     vertical-align: top;
-    width: 17.46%;
+    width: 17.38%;
 
     &:last-child {
       padding-right: 0;
@@ -22,7 +22,7 @@
       color: @white;
       display: block;
       font-weight: 400;
-      margin-bottom: 12px;
+      margin-bottom: 15px;
       opacity: 0.4;
       transition: 0.2s opacity ease-in-out;
 
@@ -60,13 +60,38 @@
 
 @media screen and (max-width: @pageLargeDev) {
   .page-footer {
+    .flexbox();
+    .flex-flow(row nowrap);
     font-family: 'Avenir Next', AvenirNext, Arial, sans-serif;
     padding-top: 61px;
     padding-bottom: 61px;
 
     &__column {
+
+      width: 17.25%;
       &-heading {
-        margin-bottom: 13px;
+        margin-bottom: 19px;
+      }
+
+      &:nth-child(1) {
+        .order(1);
+      }
+
+      &:nth-child(2) {
+        .order(3);
+      }
+
+      &:nth-child(3) {
+        .order(0);
+      }
+
+      &:nth-child(4) {
+        .order(4);
+      }
+
+      &:nth-child(5) {
+        .order(5);
+        width: 31%;
       }
     }
   }
@@ -75,10 +100,11 @@
 @media screen and (max-width: 900px) {
   .page-footer {
     &:extend(.container);
+    .flex-flow(column);
     padding-right: 0;
 
-    padding-top: 1px;
-    padding-bottom: 28px;
+    padding-top: 0;
+    padding-bottom: 31px;
 
     &__column {
       display: block;
@@ -94,7 +120,7 @@
         margin-bottom: 0;
         border-bottom: 1px solid #656d70;
         padding-top: 14px;
-        padding-bottom: 18px;
+        padding-bottom: 17px;
         position: relative;
       }
 

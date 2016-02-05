@@ -7,7 +7,7 @@
   &__image {
     height: 100%;
     left: 50%;
-    margin-left: -359px;
+    margin-left: -349px;
     position: absolute;
     top: 0;
     width: 400px;
@@ -24,7 +24,7 @@
     }
 
     &-left {
-      padding-left: 15px;
+      padding-left: 60px;
     }
 
     &-right {
@@ -42,16 +42,30 @@
   }
 }
 
+@media screen and (max-width: @pageLargeDev) {
+  .map {
+    &__image {
+      margin-left: -387px;
+    }
+
+    &__text {
+      &-left {
+        padding-left: 22px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: @pageSmallDev) {
   .map {
     height: 152px;
 
     &__image {
-      .size(100%, 432px);
-      left: -147px;
-      margin-left: 0;
+      .size(50%, 100%);
+      left: 50%;
+      margin-left: -375px;
       min-width: 567px;
-      top: -95px;
+      top: 0;
     }
 
     &__text {
@@ -65,23 +79,24 @@
       }
 
       &-left {
-        padding-left: 0;
+        padding-left: 33px;
         text-align: right;
+        width: 28%;
 
         img {
-          max-width: 100px;
-          width: 52%;
+          max-width: 60px;
+          width: 100%;
         }
       }
 
       &-right {
-        padding: 47px 12px 0;
+        padding: 45px 0 0 13px;
         text-align: left;
         width: 65%;
 
         img {
           max-width: 130px;
-          width: 76%;
+          width: 73%;
         }
       }
 
