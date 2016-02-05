@@ -1892,6 +1892,9 @@ svg#card__logo use {
     margin: 4px 0 12px;
     max-height: 42px;
   }
+  .grid-elements__item-image {
+    min-height: 178px;
+  }
   .grid-elements__link {
     padding-bottom: 31px;
   }
